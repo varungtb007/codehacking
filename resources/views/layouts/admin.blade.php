@@ -9,12 +9,12 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
 {{--    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">--}}
 
-    <!-- Bootstrap core CSS -->
-{{--    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">--}}
-{{--    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">--}}
+<!-- Bootstrap core CSS -->
+    {{--    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">--}}
+    {{--    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">--}}
 
 
-        <link href="{{asset('css/libs.css')}}" rel="stylesheet">
+    <link href="{{asset('css/libs.css')}}" rel="stylesheet">
 </head>
 <body id="admin-page">
 
@@ -67,15 +67,20 @@
         </ul>
         <ul class="nav" id="side-menu">
             <li>
-                <a href="#"><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="/users">All Users</a>
-                    </li>
-                </ul>
-                <!-- /.nav-second-level -->
+                <a href="#"><i class="fa fa-wrench fa-fw"></i>Users</a>
             </li>
         </ul>
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="{{route('users.index')}}"><i class="fa fa-wrench fa-fw"></i>All Users</a>
+            </li>
+        </ul>
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="{{route('users.create')}}"><i class="fa fa-wrench fa-fw"></i>Create Users</a>
+            </li>
+        </ul>
+
     </div>
 </div>
 
